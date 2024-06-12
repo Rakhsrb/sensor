@@ -65,7 +65,7 @@ export const Home = () => {
                 <h2 className="text-lg text-sky-900 font-semibold">{title}</h2>
                 <p>
                   {description.length > 90
-                    ? description.slice(0, 90) + "..."
+                    ? `${description.slice(0, 90)}...`
                     : description}
                 </p>
                 <Link className="uppercase bg-sky-900 text-sky-50 border-2 border-sky-900 transition-all hover:border-sky-900 hover:bg-sky-50 hover:text-sky-900 py-2 px-6 rounded-xl font-bold">
