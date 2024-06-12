@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.first {
+  height: 100vh;
+  background: url("https://w.forfun.com/fetch/3b/3bec2fc3c92c15b25b7fa7264cf91d2e.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
