@@ -21,19 +21,19 @@ export const Header = () => {
     },
   ];
   return (
-    <header className="h-[80px] bg-sky-600">
+    <header className="h-[80px] bg-sky-50 p-4">
       <div className="container h-full flex items-center justify-between">
-        <Link className="text-white text-2xl">LOGO</Link>
+        <Link className="text-sky-900 text-2xl font-medium">Analysis-AI</Link>
         <ul className="flex gap-10">
-          {Links.map((item) => (
-            <li>
-              <Link className="text-white font-semibold" to={item.to}>
+          {Links.map((item, index) => (
+            <li key={index + 1}>
+              <Link className="text-sky-900 font-semibold" to={item.to}>
                 {item.title}
               </Link>
             </li>
           ))}
         </ul>
-        <Link className="bg-white text-sky-600 border-2 border-white transition-all hover:border-white-700 hover:bg-sky-600 hover:text-white py-2 px-6 rounded-xl font-bold">
+        <Link className="bg-sky-900 text-sky-50 border-2 border-sky-900 transition-all hover:border-sky-900 hover:bg-sky-50 hover:text-sky-900 py-2 px-6 rounded-xl font-bold">
           LOGIN / REGISTER
         </Link>
       </div>

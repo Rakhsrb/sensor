@@ -16,7 +16,13 @@
 
 .first {
   height: 100vh;
-  background: url("https://w.forfun.com/fetch/3b/3bec2fc3c92c15b25b7fa7264cf91d2e.jpeg");
+  background: linear-gradient(
+      to right,
+      rgba(20, 130, 255, 0.346),
+      rgba(0, 0, 255, 0.14)
+    ),
+    url("https://w.forfun.com/fetch/3b/3bec2fc3c92c15b25b7fa7264cf91d2e.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: right;
 }
