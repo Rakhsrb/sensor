@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import brain from "../assets/brain.jpg";
+import breast from "../assets/grud.jpg";
+import liver from "../assets/liver.png";
+import lungs from "../assets/lungs.jpg";
 
 export const Home = () => {
   const services = [
@@ -8,7 +12,7 @@ export const Home = () => {
       title: "Analysis Liver",
       description:
         "The liver is a critical organ in the human body responsible for an array of functions that help support metabolism, immunity, digestion, detoxification, and vitamin storage, among other functions.",
-      preview: "src/assets/liver.png",
+      preview: liver,
       link: "/analysis-liver",
     },
     {
@@ -16,7 +20,7 @@ export const Home = () => {
       title: "Analysis Brain",
       description:
         "The brain is a complex organ that controls thought, memory, emotion, touch, motor skills, vision, breathing, temperature, hunger and every process that regulates our body.",
-      preview: "src/assets/brain.jpg",
+      preview: brain,
       link: "/analysis-brain",
     },
     {
@@ -24,7 +28,7 @@ export const Home = () => {
       title: "Analysis Lungs",
       description:
         "The lungs are the central organs of the respiratory system in humans and most other animals, including some snails and a small number of fish. In mammals and most other vertebrates, two lungs are located near the backbone on either side of the heart. Their function in the respiratory system is to extract oxygen from the air and transfer it into the bloodstream, and to release carbon dioxide from the bloodstream into the atmosphere, in a process of gas exchange.",
-      preview: "src/assets/lungs.jpg",
+      preview: lungs,
       link: "/analysis-lungs",
     },
     {
@@ -32,7 +36,7 @@ export const Home = () => {
       title: "Analysis Breast",
       description:
         "Glandular organ located on the chest. The breast is made up of connective tissue, fat, and breast tissue that contains the glands that can make milk. Also called mammary gland.",
-      preview: "src/assets/grud.jpg",
+      preview: breast,
       link: "/analysis-breast",
     },
   ];
