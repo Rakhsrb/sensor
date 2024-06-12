@@ -1,4 +1,4 @@
-import { TextOutdent } from "@phosphor-icons/react";
+import { TextIndent, TextOutdent } from "@phosphor-icons/react";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -21,20 +21,21 @@ export const Header = () => {
       title: "CONTACT",
     },
   ];
-
   const [activateNav, setActivateNav] = useState(false);
+
+  document.body.style.overflowY = activateNav ? "hidden" : "scroll";
 
   return (
     <header className="h-[80px] bg-sky-50 p-4 fixed w-full z-[999999]">
       <div className="container h-full flex items-center justify-between">
         <Link className="text-sky-900 text-2xl font-medium">Analysis-AI</Link>
         <ul
-          className={`flex flex-col gap-7 md:gap-10 md:flex-row fixed top-[80px] md:static bg-sky-50 w-full h-full md:w-auto md:h-auto p-4 bg-opacity-50 backdrop-blur-md transition-all ease-linear duration-200 ${
-            activateNav ? "right-0 items-start" : "-right-full items-end"
-          }`}
+          className={`flex flex-col gap-7 fixed top-[80px] md:static bg-sky-50 w-full h-full p-4 bg-opacity-50 backdrop-blur-md transition-all ease-linear duration-200 ${
+            activateNav ? "right-0" : "-right-full"
+          } md:gap-10 md:flex-row md:w-auto md:h-auto`}
         >
           {Links.map((item, index) => (
-            <li key={index + 1} style={{ "--i": item.index }}>
+            <li key={index + 1}>
               <Link className="text-sky-900 font-semibold" to={item.to}>
                 {item.title}
               </Link>
@@ -54,9 +55,13 @@ export const Header = () => {
           onClick={() =>
             activateNav ? setActivateNav(false) : setActivateNav(true)
           }
-          className="md:hidden"
+          className="md:hidden "
         >
-          <TextOutdent size={32} color="#0c4a6e" />
+          {activateNav ? (
+            <TextIndent size={32} color="#0c4a6e" />
+          ) : (
+            <TextOutdent size={32} color="#0c4a6e" />
+          )}
         </span>
       </div>
     </header>
