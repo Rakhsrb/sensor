@@ -101,7 +101,7 @@ export const Home = () => {
           ))}
         </div>
       </section>
-      <section className="py-12 md:py-20 px-4 flex flex-col gap-12">
+      <section className="py-12 md:py-20 px-4 flex flex-col gap-12 about">
         <div className="container flex flex-col gap-3">
           <h1 className="text-xl text-sky-900 font-semibold md:text-4xl">
             About Us
