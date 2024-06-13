@@ -1,5 +1,7 @@
+import { CheckSquareOffset, FloppyDisk, Scan } from "@phosphor-icons/react";
 import React from "react";
 import { Link } from "react-router-dom";
+import about_serv from "../assets/about_service.jpg";
 import brain from "../assets/brain.jpg";
 import breast from "../assets/grud.jpg";
 import liver from "../assets/liver.png";
@@ -40,8 +42,26 @@ export const Home = () => {
       link: "/analysis-breast",
     },
   ];
+
+  const wwd = [
+    {
+      id: 1,
+      title: "Send your X-Ray",
+      icon: <FloppyDisk size={40} color="#0c4a6e" weight="regular" />,
+    },
+    {
+      id: 2,
+      title: "Our AI scan your X-Ray",
+      icon: <Scan size={40} color="#0c4a6e" weight="regular" />,
+    },
+    {
+      id: 3,
+      title: "And get results instantly!",
+      icon: <CheckSquareOffset size={40} color="#0c4a6e" weight="regular" />,
+    },
+  ];
   return (
-    <>
+    <main>
       <section className="first p-4">
         <div className="container flex flex-col gap-4 text-5xl md:text-7xl font-medium justify-center h-screen text-white px-7">
           <h1>
@@ -80,6 +100,37 @@ export const Home = () => {
           ))}
         </div>
       </section>
-    </>
+      <section className="py-12 md:py-20 px-4">
+        <div className="container grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <figure>
+            <img src={about_serv} alt="" />
+          </figure>
+          <div className="flex flex-col justify-between gap-5">
+            <h1 className="text-xl text-sky-900 font-semibold md:text-4xl">
+              About Us
+            </h1>
+            <p className="text-sm text-sky-600 text-justify xl:text-lg">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              non, tenetur iusto quia hic praesentium deserunt ratione ducimus
+              necessitatibus, voluptates officiis quo ad a nobis aspernatur,
+              facere ab. Hic fugiat, reprehenderit rem amet eaque qui id dolorem
+              excepturi dolorum, pariatur iste neque expedita temporibus non
+              quam facilis doloribus quisquam labore dolores reiciendis sequi
+              iusto voluptatum.
+            </p>
+            <div className="flex flex-col gap-10 justify-between p-5 sm:flex-row">
+              {wwd?.map(({ icon, id, title }) => (
+                <span
+                  className="capitalize text-center text-sky-600 flex flex-col items-center justify-center gap-3"
+                  key={id}
+                >
+                  {icon} {title}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 };
