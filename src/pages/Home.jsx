@@ -43,7 +43,7 @@ export const Home = () => {
     },
   ];
 
-  const wwd = [
+  const whatwedo = [
     {
       id: 1,
       title: "Send your X-Ray",
@@ -63,7 +63,7 @@ export const Home = () => {
   return (
     <main>
       <section className="first p-4">
-        <div className="container flex flex-col gap-4 text-5xl md:text-7xl font-medium justify-center h-screen text-white px-7">
+        <div className="container flex flex-col gap-4 text-5xl md:text-7xl font-medium justify-center items-center h-screen text-white px-7 text-center">
           <h1>
             Analysis your X-Rays, <br /> with our Analysis-AI
           </h1>
@@ -72,7 +72,8 @@ export const Home = () => {
       <section className="py-12 md:py-20 flex flex-col gap-10 px-4">
         <div className="container flex flex-col gap-2">
           <h1 className="text-3xl text-sky-900 font-semibold">Our Services</h1>
-          <p className="text-sky-600 font-medium">Analysis your X-Rays</p>
+          <span className="text-sky-600 font-medium">Analysis your X-Rays</span>
+          <span className="w-24 h-2 bg-sky-500 block rounded-full"></span>
         </div>
         <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {services.map(({ description, id, link, preview, title }) => (
@@ -100,15 +101,19 @@ export const Home = () => {
           ))}
         </div>
       </section>
-      <section className="py-12 md:py-20 px-4">
+      <section className="py-12 md:py-20 px-4 flex flex-col gap-12">
+        <div className="container flex flex-col gap-3">
+          <h1 className="text-xl text-sky-900 font-semibold md:text-4xl">
+            About Us
+          </h1>
+          <span className="text-sky-600">What we do</span>
+          <span className="w-24 h-2 bg-sky-500 block rounded-full"></span>
+        </div>
         <div className="container grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <figure>
-            <img src={about_serv} alt="" />
+            <img src={about_serv} alt="" className="rounded-md" />
           </figure>
           <div className="flex flex-col justify-between gap-5">
-            <h1 className="text-xl text-sky-900 font-semibold md:text-4xl">
-              About Us
-            </h1>
             <p className="text-sm text-sky-600 text-justify xl:text-lg">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
               non, tenetur iusto quia hic praesentium deserunt ratione ducimus
@@ -119,7 +124,7 @@ export const Home = () => {
               iusto voluptatum.
             </p>
             <div className="flex flex-col gap-10 justify-between p-5 sm:flex-row">
-              {wwd?.map(({ icon, id, title }) => (
+              {whatwedo?.map(({ icon, id, title }) => (
                 <span
                   className="capitalize text-center text-sky-600 flex flex-col items-center justify-center gap-3"
                   key={id}
