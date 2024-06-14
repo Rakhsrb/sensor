@@ -5,6 +5,7 @@ import { Home } from "./pages/Home";
 import { Upload } from "./pages/Upload";
 import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
+import { About } from "./pages/About";
 
 function App() {
   const router = createBrowserRouter([
@@ -15,6 +16,10 @@ function App() {
         {
           index: true,
           element: <Home />,
+        },
+        {
+          path: "about",
+          element: <About />,
         },
         {
           path: "upload",
