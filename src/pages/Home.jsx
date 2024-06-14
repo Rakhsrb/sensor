@@ -63,19 +63,20 @@ export const Home = () => {
       icon: <CheckSquareOffset size={40} color="#0c4a6e" weight="regular" />,
     },
   ];
+
   return (
     <main>
       <section className="first p-4">
         <div className="container flex flex-col gap-4 text-5xl md:text-7xl font-medium justify-center items-center h-screen text-white px-7 text-center">
           <h1>
-            Analysis your X-Rays, <br /> with our Analysis-AI
+            Analyze your X-Rays, <br /> with our Analysis-AI
           </h1>
         </div>
       </section>
       <section className="py-12 md:py-20 flex flex-col gap-10 px-4">
         <div className="container flex flex-col gap-2">
           <h1 className="text-3xl text-sky-900 font-semibold">Our Services</h1>
-          <span className="text-sky-600 font-medium">Analysis your X-Rays</span>
+          <span className="text-sky-600 font-medium">Analyze your X-Rays</span>
           <span className="w-24 h-2 bg-sky-500 block rounded-full"></span>
         </div>
         <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -112,19 +113,53 @@ export const Home = () => {
           <span className="text-sky-600">What we do</span>
           <span className="w-24 h-2 bg-sky-500 block rounded-full"></span>
         </div>
-        <div className="container grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          <figure>
-            <img src={about_serv} alt="" className="rounded-md" />
+        <div className="container grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          <figure className="w-full h-full">
+            <img
+              src={about_serv}
+              alt=""
+              className="rounded-md w-full h-full object-cover"
+            />
           </figure>
           <div className="flex flex-col justify-between gap-5">
-            <p className="text-sm text-sky-600 text-justify xl:text-lg">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              non, tenetur iusto quia hic praesentium deserunt ratione ducimus
-              necessitatibus, voluptates officiis quo ad a nobis aspernatur,
-              facere ab. Hic fugiat, reprehenderit rem amet eaque qui id dolorem
-              excepturi dolorum, pariatur iste neque expedita temporibus non
-              quam facilis doloribus quisquam labore dolores reiciendis sequi
-              iusto voluptatum.
+            <p className="text-sm text-sky-600 text-justify">
+              In the realm of medical advancements, our AI-powered analysis
+              tools for liver, brain, and lung X-rays stand out as pioneering
+              innovations. The liver, a vital organ, is responsible for numerous
+              essential functions including metabolism, immunity, and
+              detoxification. Accurate analysis of liver X-rays is crucial for
+              diagnosing conditions like cirrhosis, hepatitis, and liver cancer.
+              Our AI technology enhances the precision and speed of these
+              diagnoses, potentially saving lives through early detection.
+            </p>
+            <p className="text-sm text-sky-600 text-justify">
+              Similarly, the brain, which governs all bodily functions and
+              cognitive processes, requires meticulous examination to identify
+              issues such as tumors, aneurysms, or traumatic injuries. AI
+              facilitates a more detailed and quicker analysis, providing
+              doctors with the critical information they need to make informed
+              decisions. This capability is particularly beneficial in
+              emergencies where time is of the essence.
+            </p>
+            <p className="text-sm text-sky-600 text-justify">
+              The lungs, essential for respiration and gas exchange, are
+              susceptible to various diseases including pneumonia, tuberculosis,
+              and lung cancer. Our AI tools excel in detecting even the subtlest
+              abnormalities in lung X-rays, enabling early intervention and
+              treatment. By leveraging advanced algorithms and vast datasets,
+              our AI systems continuously improve their accuracy and
+              reliability, offering unparalleled support to healthcare
+              professionals.
+            </p>
+            <p className="text-sm text-sky-600 text-justify">
+              The integration of AI in medical imaging not only streamlines the
+              diagnostic process but also significantly enhances the accuracy of
+              diagnoses. As we continue to refine these technologies, we are
+              committed to providing cutting-edge solutions that support medical
+              practitioners and improve patient outcomes. Our mission is to
+              harness the power of AI to revolutionize healthcare, ensuring that
+              patients receive timely and accurate diagnoses for better health
+              management.
             </p>
             <div className="flex flex-col gap-10 justify-between p-5 sm:flex-row">
               {whatwedo?.map(({ icon, id, title, link }) => (
