@@ -43,12 +43,18 @@ export const Header = () => {
             </li>
           ))}
           <li>
-            <Link className="bg-sky-900 text-sky-50 border-2 border-sky-900 transition-all hover:border-sky-900 hover:bg-transparent hover:text-sky-900 py-2 px-6 rounded-xl font-bold md:hidden">
+            <Link
+              to={"/login"}
+              className="bg-sky-900 text-sky-50 border-2 border-sky-900 transition-all hover:border-sky-900 hover:bg-transparent hover:text-sky-900 py-2 px-6 rounded-xl font-bold md:hidden"
+            >
               LOGIN / REGISTER
             </Link>
           </li>
         </ul>
-        <Link className="bg-sky-900 text-sky-50 border-2 border-sky-900 transition-all hover:border-sky-900 hover:bg-transparent hover:text-sky-900 py-2 px-6 rounded-xl font-bold md:block hidden">
+        <Link
+          to={"/login"}
+          className="bg-sky-900 text-sky-50 border-2 border-sky-900 transition-all hover:border-sky-900 hover:bg-transparent hover:text-sky-900 py-2 px-6 rounded-xl font-bold md:block hidden"
+        >
           LOGIN / REGISTER
         </Link>
 

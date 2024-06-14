@@ -8,25 +8,6 @@ import {
 } from "@phosphor-icons/react";
 
 export const Footer = () => {
-  const Links = [
-    {
-      to: "/",
-      title: "HOME",
-    },
-    {
-      to: "/about",
-      title: "ABOUT",
-    },
-    {
-      to: "/blog",
-      title: "BLOG",
-    },
-    {
-      to: "/contact",
-      title: "CONTACT",
-    },
-  ];
-
   const SocialLinks = [
     {
       to: "https://www.facebook.com",
@@ -53,15 +34,6 @@ export const Footer = () => {
           <Link className="text-sky-900 text-2xl font-medium mb-4 md:mb-0">
             Analysis-AI
           </Link>
-          <ul className="flex gap-4 md:gap-10">
-            {Links.map((item, index) => (
-              <li key={index + 1}>
-                <Link className="text-sky-900 font-semibold" to={item.to}>
-                  {item.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
         </div>
         <div className="flex gap-4 mt-4 md:mt-0">
           {SocialLinks.map((item, index) => (

@@ -31,15 +31,3 @@ body {
   background-size: cover;
   background-position: right;
 }
-
-/* .about {
-  background: linear-gradient(
-      to right,
-      rgba(128, 128, 128, 0.253),
-      rgba(255, 255, 255, 0.192)
-    ),
-    url("./assets/about_bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-} */
