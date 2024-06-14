@@ -15,7 +15,7 @@ export const Home = () => {
       description:
         "The liver is a critical organ in the human body responsible for an array of functions that help support metabolism, immunity, digestion, detoxification, and vitamin storage, among other functions.",
       preview: liver,
-      link: "/analysis-liver",
+      link: "/upload",
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ export const Home = () => {
       description:
         "The brain is a complex organ that controls thought, memory, emotion, touch, motor skills, vision, breathing, temperature, hunger and every process that regulates our body.",
       preview: brain,
-      link: "/analysis-brain",
+      link: "/upload",
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ export const Home = () => {
       description:
         "The lungs are the central organs of the respiratory system in humans and most other animals, including some snails and a small number of fish. In mammals and most other vertebrates, two lungs are located near the backbone on either side of the heart. Their function in the respiratory system is to extract oxygen from the air and transfer it into the bloodstream, and to release carbon dioxide from the bloodstream into the atmosphere, in a process of gas exchange.",
       preview: lungs,
-      link: "/analysis-lungs",
+      link: "/upload",
     },
     {
       id: 4,
@@ -39,22 +39,25 @@ export const Home = () => {
       description:
         "Glandular organ located on the chest. The breast is made up of connective tissue, fat, and breast tissue that contains the glands that can make milk. Also called mammary gland.",
       preview: breast,
-      link: "/analysis-breast",
+      link: "/upload",
     },
   ];
 
   const whatwedo = [
     {
+      link: "/upload",
       id: 1,
       title: "Send your X-Ray",
       icon: <FloppyDisk size={40} color="#0c4a6e" weight="regular" />,
     },
     {
+      link: "/upload",
       id: 2,
       title: "Our AI scan your X-Ray",
       icon: <Scan size={40} color="#0c4a6e" weight="regular" />,
     },
     {
+      link: "/upload",
       id: 3,
       title: "And get results instantly!",
       icon: <CheckSquareOffset size={40} color="#0c4a6e" weight="regular" />,
@@ -124,13 +127,14 @@ export const Home = () => {
               iusto voluptatum.
             </p>
             <div className="flex flex-col gap-10 justify-between p-5 sm:flex-row">
-              {whatwedo?.map(({ icon, id, title }) => (
-                <span
+              {whatwedo?.map(({ icon, id, title, link }) => (
+                <Link
+                  to={link}
                   className="capitalize text-center text-sky-600 flex flex-col items-center justify-center gap-3"
                   key={id}
                 >
                   {icon} {title}
-                </span>
+                </Link>
               ))}
             </div>
           </div>

@@ -21,12 +21,13 @@ export const Header = () => {
       title: "CONTACT",
     },
   ];
+
   const [activateNav, setActivateNav] = useState(false);
 
   document.body.style.overflowY = activateNav ? "hidden" : "scroll";
 
   return (
-    <header className="h-[80px] bg-sky-50 p-4 fixed w-full z-[999999]">
+    <header className="h-[80px] bg-sky-50 p-4 sticky top-0 left-0 w-full z-[999999] shadow-md">
       <div className="container h-full flex items-center justify-between">
         <Link className="text-sky-900 text-2xl font-medium">Analysis-AI</Link>
         <ul
