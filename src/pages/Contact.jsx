@@ -58,7 +58,7 @@ export const Contact = () => {
             </span>
             <span className="flex gap-2 text-sm items-center">
               <EnvelopeSimple size={24} color="#0c4a6e" />
-              Analysis@gmail.com <br />
+              AnalysisAI@gmail.com <br />
               Istalgan vaqtda xabar jo'natish!
             </span>
           </div>
