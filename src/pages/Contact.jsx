@@ -42,7 +42,7 @@ export const Contact = () => {
               Send
             </button>
           </form>
-          <div className="flex flex-col gap-3 text-sky-600">
+          <div className="flex flex-col gap-5 text-sky-600 bg-sky-100 p-5 rounded-md">
             <span className="text-sm flex items-center gap-3">
               <HouseLine size={24} color="#0c4a6e" /> Наманган, Наманганская
               Область, Узбекситан
