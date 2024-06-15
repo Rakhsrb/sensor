@@ -31,3 +31,31 @@ body {
   background-size: cover;
   background-position: right;
 }
+
+.about_bg {
+  background: linear-gradient(
+      to right,
+      rgba(123, 182, 250, 0.346),
+      rgba(7, 7, 114, 0.14)
+    ),
+    url("./assets/about_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.contact_bg {
+  background: linear-gradient(
+      to right,
+      rgba(123, 182, 250, 0.219),
+      rgba(2, 2, 71, 0.397)
+    ),
+    url("./assets/contact-us.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+}
+
+.grid-contact {
+  grid-template-columns: 2fr 1fr;
+}

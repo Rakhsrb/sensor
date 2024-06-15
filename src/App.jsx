@@ -1,11 +1,12 @@
 import React from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { RootLayout } from "./layout/RootLayout";
+import { About } from "./pages/About";
+import { Contact } from "./pages/Contact";
 import { Home } from "./pages/Home";
-import { Upload } from "./pages/Upload";
 import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
-import { About } from "./pages/About";
+import { Upload } from "./pages/Upload";
 
 function App() {
   const router = createBrowserRouter([
@@ -20,6 +21,10 @@ function App() {
         {
           path: "about",
           element: <About />,
+        },
+        {
+          path: "contact",
+          element: <Contact />,
         },
         {
           path: "upload",

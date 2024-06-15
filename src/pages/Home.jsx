@@ -11,7 +11,7 @@ export const Home = () => {
   const services = [
     {
       id: 1,
-      title: "Analysis Liver",
+      title: "Analyze Liver",
       description:
         "The liver is a critical organ in the human body responsible for an array of functions that help support metabolism, immunity, digestion, detoxification, and vitamin storage, among other functions.",
       preview: liver,
@@ -19,7 +19,7 @@ export const Home = () => {
     },
     {
       id: 2,
-      title: "Analysis Brain",
+      title: "Analyze Brain",
       description:
         "The brain is a complex organ that controls thought, memory, emotion, touch, motor skills, vision, breathing, temperature, hunger and every process that regulates our body.",
       preview: brain,
@@ -27,7 +27,7 @@ export const Home = () => {
     },
     {
       id: 3,
-      title: "Analysis Lungs",
+      title: "Analyze Lungs",
       description:
         "The lungs are the central organs of the respiratory system in humans and most other animals, including some snails and a small number of fish. In mammals and most other vertebrates, two lungs are located near the backbone on either side of the heart. Their function in the respiratory system is to extract oxygen from the air and transfer it into the bloodstream, and to release carbon dioxide from the bloodstream into the atmosphere, in a process of gas exchange.",
       preview: lungs,
@@ -35,7 +35,7 @@ export const Home = () => {
     },
     {
       id: 4,
-      title: "Analysis Breast",
+      title: "Analyze Breast",
       description:
         "Glandular organ located on the chest. The breast is made up of connective tissue, fat, and breast tissue that contains the glands that can make milk. Also called mammary gland.",
       preview: breast,
