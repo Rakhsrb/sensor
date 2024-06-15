@@ -11,7 +11,7 @@ export const Contact = () => {
           </h1>
         </div>
       </section>
-      <section className="py-12 px-4">
+      <section className="py-20 px-4">
         <div className="container grid grid-contact gap-10">
           <form className="w-full flex flex-col gap-5">
             <div className="w-full flex gap-5 *:w-full *:border *:p-2 *:outline-sky-600">
