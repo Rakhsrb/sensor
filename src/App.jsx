@@ -7,6 +7,10 @@ import { Home } from "./pages/Home";
 import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
 import { Upload } from "./pages/Upload";
+import { UploadLiver } from "./pages/Uploads/UploadLiver";
+import { UploadLungs } from "./pages/Uploads/UploadLungs";
+import { UploadBrain } from "./pages/Uploads/UploadBrain";
+import { UploadBreast } from "./pages/Uploads/UploadBreast";
 
 function App() {
   const router = createBrowserRouter([
@@ -27,8 +31,20 @@ function App() {
           element: <Contact />,
         },
         {
-          path: "upload",
-          element: <Upload />,
+          path: "upload-liver",
+          element: <UploadLiver />,
+        },
+        {
+          path: "upload-lungs",
+          element: <UploadLungs />,
+        },
+        {
+          path: "upload-brain",
+          element: <UploadBrain />,
+        },
+        {
+          path: "upload-breast",
+          element: <UploadBreast />,
         },
         {
           path: "login",

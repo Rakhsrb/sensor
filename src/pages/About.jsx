@@ -51,7 +51,7 @@ export const About = () => {
       </section>
       <section className="px-4 py-12">
         <div className="container flex flex-col gap-5">
-          <p className="text-xs md:text-lg text-sky-600 text-justify">
+          <p className="text-xs md:text-base text-sky-600 text-justify">
             In the realm of medical advancements, our AI-powered analysis tools
             for liver, brain, and lung X-rays stand out as pioneering
             innovations. The liver, a vital organ, is responsible for numerous
@@ -82,7 +82,7 @@ export const About = () => {
               professionals.
             </p>
           </div>
-          <p className="text-xs md:text-lg text-sky-600 text-justify">
+          <p className="text-xs md:text-base text-sky-600 text-justify">
             The integration of AI in medical imaging not only streamlines the
             diagnostic process but also significantly enhances the accuracy of
             diagnoses. As we continue to refine these technologies, we are
