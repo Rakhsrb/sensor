@@ -1,20 +1,26 @@
 import { EnvelopeSimple, HouseLine, PhoneList } from "@phosphor-icons/react";
 import React from "react";
+import { useLocation } from "react-router-dom";
 
 export const Contact = () => {
+  const thisPage = useLocation();
   return (
-    <main>
-      <section className="py-12 md:py-20 px-4 contact_bg">
+    <>
+      <section
+        className={`py-12 md:py-20 px-4 ${
+          thisPage.pathname == "/"
+            ? "text-sky-950 text-5xl"
+            : "contact_bg text-4xl text-white"
+        }`}
+      >
         <div className="container">
-          <h1 className="text-center uppercase text-4xl font-medium text-white">
-            Contact Us
-          </h1>
+          <h1 className="text-center uppercase font-medium">Contact Us</h1>
         </div>
       </section>
       <section className="py-20 px-4">
         <div className="container grid grid-contact gap-10">
           <form className="w-full flex flex-col gap-5">
-            <div className="w-full flex gap-5 *:w-full *:border *:p-2 *:outline-sky-600">
+            <div className="w-full flex gap-5 *:bg-sky-50 *:w-full *:rounded-md *:p-2 *:outline-sky-600">
               <input type="text" placeholder="Fullname" name="fullname" />
               <input
                 type="email"
@@ -25,7 +31,7 @@ export const Contact = () => {
             <input
               type="text"
               placeholder="Phone number"
-              className="border p-2 outline-sky-600 w-full"
+              className="rounded-md p-2 outline-sky-600 bg-sky-50 w-full"
               name="phone"
             />
             <textarea
@@ -33,16 +39,16 @@ export const Contact = () => {
               rows={10}
               cols={30}
               placeholder="Send message"
-              className="border p-2 outline-sky-600 w-full resize-y"
+              className="rounded-md p-2 outline-sky-600 bg-sky-50 w-full resize-y"
             ></textarea>
             <button
               type="submit"
-              className="text-lg bg-sky-600 hover:bg-sky-900 py-2 text-white transition duration-200"
+              className="text-lg rounded-md bg-sky-600 hover:bg-sky-900 py-2 text-white transition duration-200"
             >
               Send
             </button>
           </form>
-          <div className="flex flex-col gap-5 text-sky-600 bg-sky-100 p-5 rounded-md">
+          <div className="flex flex-col gap-5 text-sky-600 bg-sky-50 p-5 rounded-md">
             <span className="text-sm flex items-center gap-3">
               <HouseLine size={24} color="#0c4a6e" /> Наманган, Наманганская
               Область, Узбекситан
@@ -64,6 +70,6 @@ export const Contact = () => {
           </div>
         </div>
       </section>
-    </main>
+    </>
   );
 };

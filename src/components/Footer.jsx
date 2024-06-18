@@ -87,7 +87,7 @@ export const Footer = () => {
               to={item.to}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sky-900 hover:text-sky-700 transition-all flex items-center gap-5"
+              className="text-sky-900 hover:text-sky-700 transition-all flex items-center gap-2"
             >
               {item.icon}
               {item.title}
