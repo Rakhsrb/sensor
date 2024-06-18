@@ -6,17 +6,21 @@ export const Contact = () => {
   const thisPage = useLocation();
   return (
     <>
-      <section
-        className={`py-12 md:py-20 px-4 ${
-          thisPage.pathname == "/"
-            ? "text-sky-950 text-5xl"
-            : "contact_bg text-4xl text-white"
-        }`}
-      >
-        <div className="container">
-          <h1 className="text-center uppercase font-medium">Contact Us</h1>
+      {thisPage.pathname == "/" ? (
+        <div className="container flex flex-col gap-3 pt-10">
+          <h1 className="text-xl text-sky-900 font-semibold md:text-4xl">
+            Contact Us
+          </h1>
+          <span className="text-sky-600">Send Us Your Messages</span>
+          <span className="w-24 h-2 bg-sky-500 block rounded-full"></span>
         </div>
-      </section>
+      ) : (
+        <section className="py-12 md:py-20 px-4 contact_bg text-4xl text-white">
+          <div className="container">
+            <h1 className="text-center uppercase font-medium">Contact Us</h1>
+          </div>
+        </section>
+      )}
       <section className="py-20 px-4">
         <div className="container grid grid-contact gap-10">
           <form className="w-full flex flex-col gap-5">

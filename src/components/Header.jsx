@@ -28,7 +28,7 @@ export const Header = () => {
     <header className="h-[80px] bg-sky-50 p-4 sticky top-0 left-0 w-full z-[999999] shadow-md">
       <div className="container h-full flex items-center justify-between">
         <Link className="text-sky-900 text-2xl font-medium">Analysis-AI</Link>
-        <ul className={`flex gap-7 ${activateNav ? "active" : ""}`}>
+        <ul className={`flex gap-7 ${activateNav ? "" : "active"}`}>
           {Links.map((item, index) => (
             <li key={index + 1}>
               <Link className="font-semibold" to={item.to}>

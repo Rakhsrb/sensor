@@ -10,6 +10,18 @@
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0c4a6e;
+}
+
 .container {
   max-width: 1400px;
   margin: 0 auto;

@@ -53,7 +53,7 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="bg-sky-50 py-10 px-4 w-full shadow-inner">
+    <footer className="bg-sky-50 py-10 px-4 w-full">
       <div className="container flex flex-col md:flex-row justify-between items-baseline gap-5">
         <div className="flex flex-col md:flex-row items-center gap-4 md:gap-10">
           <Link className="text-sky-900 text-2xl font-medium ">
