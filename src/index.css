@@ -72,6 +72,10 @@
   display: none;
 }
 
+header .container ul {
+  color: #0c4a6e;
+}
+
 @media screen and (max-width: 700px) {
   header .container ul.active {
     left: -100%;

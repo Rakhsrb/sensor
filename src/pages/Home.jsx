@@ -8,8 +8,8 @@ import lungs from "../assets/lungs.jpg";
 //team members
 import member3 from "../assets/member_3.png";
 import member4 from "../assets/member_4.png";
-import { EnvelopeSimple, HouseLine, PhoneList } from "@phosphor-icons/react";
 import { Contact } from "./Contact";
+import { ArrowLineDown } from "@phosphor-icons/react";
 
 export const Home = () => {
   const services = [
@@ -63,13 +63,13 @@ export const Home = () => {
     {
       id: 3,
       fullname: "Jaloliddin Xalilov",
-      position: "Urolog",
+      position: "Vrach",
       image: member3,
     },
     {
       id: 4,
       fullname: "Sardorbek Gulomjonov",
-      position: "Ginekolog",
+      position: "Okulist",
       image: member4,
     },
   ];
@@ -91,7 +91,7 @@ export const Home = () => {
         </div>
         <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {services.map(({ description, id, link, preview, title }) => (
-            <Link to={link} key={id} className="rounded-md">
+            <Link to={link} key={id} className="rounded-md shadow-md">
               <div className="h-[400px] overflow-hidden rounded-t-md">
                 <div
                   className="bg-no-repeat bg-cover bg-top h-[400px] hover:scale-[1.15] transition duration-500"
@@ -107,8 +107,8 @@ export const Home = () => {
                     ? `${description.slice(0, 90)}...`
                     : description}
                 </p>
-                <button className="uppercase bg-sky-900 text-sky-50 border-2 border-sky-900 transition-all hover:border-sky-900 hover:bg-sky-50 hover:text-sky-900 py-2 px-6 rounded-xl font-bold">
-                  Check X-Ray Analysis
+                <button className="flex items-center gap-3 uppercase bg-sky-900 text-sky-50 border-2 border-sky-900 transition-all hover:border-sky-900 hover:bg-sky-50 hover:text-sky-900 py-2 px-6 rounded-xl font-bold">
+                  Check X-Ray Analysis <ArrowLineDown size={20} />
                 </button>
               </div>
             </Link>
