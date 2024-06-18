@@ -176,7 +176,7 @@ export const Home = () => {
       </section>
       <section className="px-4 py-12 md:py-20 flex flex-col gap-14">
         <div className="container flex flex-col gap-3 pb-5">
-          <h1 className="text-3xl md:text-4xl text-sky-950">Our Team</h1>
+          <h1 className="text-3xl md:text-4xl text-sky-950 font-semibold">Our Team</h1>
           <span className="w-24 h-2 bg-sky-500 block rounded-full"></span>
         </div>
         <div className="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
