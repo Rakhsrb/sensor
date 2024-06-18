@@ -55,3 +55,30 @@
 .grid-contact {
   grid-template-columns: 2fr 1fr;
 }
+
+.removechi {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  header .container ul.active {
+    left: -100%;
+    top: 80px;
+  }
+  header .container ul {
+    position: absolute;
+    transition: all ease-in-out 0.3s;
+    left: 0;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    z-index: 123;
+    background: #0c4a6e;
+    color: #f5f5f5;
+    flex-direction: column;
+    padding: 25px;
+  }
+  .removechi {
+    display: block;
+  }
+}
