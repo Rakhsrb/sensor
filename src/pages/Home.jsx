@@ -52,25 +52,29 @@ export const Home = () => {
       id: 1,
       fullname: "Shukurjon Nuraliyev",
       position: "Neurosurgeon",
-      image: member3,
+      image:
+        "https://symbiosisuniversityhospital.com/images/doctors/abhishek.jpg",
     },
     {
       id: 2,
       fullname: "Botir Aliyev",
       position: "Okulist",
-      image: member4,
+      image:
+        "https://www.usatoday.com/gcdn/authoring/authoring-images/2024/01/11/USAT/72191800007-good-doctor.jpg?crop=5333,3999,x600,y0",
     },
     {
       id: 3,
       fullname: "Jaloliddin Xalilov",
       position: "Vrach",
-      image: member3,
+      image:
+        "https://www.telegraph.co.uk/content/dam/health-fitness/2023/04/14/TELEMMGLPICT000332075420_trans_NvBQzQNjv4BqSdnVs1xxx3yeSXN55W0GtK1UDbDdk-JPjedL466dDsg.jpeg?imwidth=680",
     },
     {
       id: 4,
       fullname: "Sardorbek Gulomjonov",
       position: "Okulist",
-      image: member4,
+      image:
+        "https://hackensackmeridianhealth.org/-/media/project/hmh/hmh/public/healthu-images/patient-perspectives/20220826-ofer-avi-werthaim-md.png",
     },
   ];
 
@@ -176,14 +180,20 @@ export const Home = () => {
       </section>
       <section className="px-4 py-12 md:py-20 flex flex-col gap-14">
         <div className="container flex flex-col gap-3 pb-5">
-          <h1 className="text-3xl md:text-4xl text-sky-950 font-semibold">Our Team</h1>
+          <h1 className="text-3xl md:text-4xl text-sky-950 font-semibold">
+            Our Team
+          </h1>
           <span className="w-24 h-2 bg-sky-500 block rounded-full"></span>
         </div>
         <div className="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
           {ourTeam.map(({ fullname, id, image, position }) => (
             <div key={id} className="text-center flex flex-col gap-5">
-              <figure className="w-full">
-                <img src={image} alt="" className="rounded-full bg-sky-50" />
+              <figure className="w-[300px] h-[300px] rounded-full overflow-hidden">
+                <img
+                  src={image}
+                  alt=""
+                  className="h-full w-full object-cover bg-sky-50"
+                />
               </figure>
               <div className="flex flex-col gap-3">
                 <span className="text-base text-sky-600">{position}</span>
