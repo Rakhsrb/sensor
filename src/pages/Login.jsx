@@ -21,10 +21,7 @@ export const Login = () => {
     setError("");
 
     try {
-      // Simulate API call
       await new Promise((resolve) => setTimeout(resolve, 2000));
-
-      // If successful, you can redirect or perform further actions
       console.log(userData);
     } catch (error) {
       setError("Failed to login. Please try again.");
