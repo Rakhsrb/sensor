@@ -2,15 +2,15 @@ import React from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { RootLayout } from "./layout/RootLayout";
 import { About } from "./pages/About";
+import { Blogs } from "./pages/Blogs";
 import { Contact } from "./pages/Contact";
 import { Home } from "./pages/Home";
 import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
-import { Upload } from "./pages/Upload";
-import { UploadLiver } from "./pages/Uploads/UploadLiver";
-import { UploadLungs } from "./pages/Uploads/UploadLungs";
 import { UploadBrain } from "./pages/Uploads/UploadBrain";
 import { UploadBreast } from "./pages/Uploads/UploadBreast";
+import { UploadLiver } from "./pages/Uploads/UploadLiver";
+import { UploadLungs } from "./pages/Uploads/UploadLungs";
 
 function App() {
   const router = createBrowserRouter([
@@ -25,6 +25,10 @@ function App() {
         {
           path: "about",
           element: <About />,
+        },
+        {
+          path: "blog",
+          element: <Blogs />,
         },
         {
           path: "contact",

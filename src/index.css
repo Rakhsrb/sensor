@@ -63,6 +63,17 @@
   background-size: cover;
   background-position: top right;
 }
+.blogs_bg {
+  background: linear-gradient(
+      to right,
+      rgba(71, 106, 146, 0.39),
+      rgba(1, 1, 112, 0.39)
+    ),
+    url("./assets/blogs_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 .grid-contact {
   grid-template-columns: 2fr 1fr;
